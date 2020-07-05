@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 Future<String> testing(String _username, String _password , String _email) async{
-  print("name :  $_username and pass $_password and email $_email");
+  print("name :  $_username and pass $_password and email $_email testing ");
   String url = 'http://192.168.43.136:8081/customersignup';
   var res = await http.post(url,
       headers: {'Content-Type': "application/x-www-form-urlencoded"},
@@ -158,7 +158,7 @@ Future<String> testing(String _username, String _password , String _email) async
         "username": _username
 
       });
-  
+
 
   return res.body;
 }
